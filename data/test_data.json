@@ -2,11 +2,20 @@
 	"flow": [
 		"[2,\"uniqueId\",\"BootNotification\",{\"chargePointModel\":\"ModelP\",\"chargePointVendor\":\"VendorA\"}]",
 		"[2,\"uniqueId\",\"StatusNotification\",{\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Available\",\"timestamp\":\"timeStamp\"}]",
-		"[2,\"uniqueId\",\"Authorize\",{\"idTag\":\"TK_001\"}]",
-		"[2,\"uniqueId\",\"StatusNotification\",{\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Prepairing\",\"timestamp\":\"timeStamp\"}]",
-		"[2,\"uniqueId\",\"StartTransaction\",{\"connectorId\":1,\"idTag\":\"TK_001\",\"meterStart\":0,\"timestamp\":\"timeStamp\"}]",
+		"[2,\"uniqueId\",\"Authorize\",{\"idTag\":\"TOKEN\"}]",
+		"[2,\"uniqueId\",\"StatusNotification\",{\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Preparing\",\"timestamp\":\"timeStamp\"}]",
+		"[2,\"uniqueId\",\"StartTransaction\",{\"connectorId\":1,\"idTag\":\"TOKEN\",\"meterStart\":0,\"timestamp\":\"timeStamp\"}]",
+
+		"[2,\"uniqueId\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":\"trsID\",\"meterValue\":[{\"timestamp\":\"timeStamp\",\"sampledValue\":[{\"value\":\"100\",\"context\":\"Sample.Periodic\",\"unit\":\"Wh\"}]}]}]",
+		"[2,\"uniqueId\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":\"trsID\",\"meterValue\":[{\"timestamp\":\"timeStamp\",\"sampledValue\":[{\"value\":\"200\",\"context\":\"Sample.Periodic\",\"unit\":\"Wh\"}]}]}]",
+		"[2,\"uniqueId\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":\"trsID\",\"meterValue\":[{\"timestamp\":\"timeStamp\",\"sampledValue\":[{\"value\":\"300\",\"context\":\"Sample.Periodic\",\"unit\":\"Wh\"}]}]}]",
+		"[2,\"uniqueId\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":\"trsID\",\"meterValue\":[{\"timestamp\":\"timeStamp\",\"sampledValue\":[{\"value\":\"400\",\"context\":\"Sample.Periodic\",\"unit\":\"Wh\"}]}]}]",
+		"[2,\"uniqueId\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":\"trsID\",\"meterValue\":[{\"timestamp\":\"timeStamp\",\"sampledValue\":[{\"value\":\"500\",\"context\":\"Sample.Periodic\",\"unit\":\"Wh\"}]}]}]",
+		"[2,\"uniqueId\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":\"trsID\",\"meterValue\":[{\"timestamp\":\"timeStamp\",\"sampledValue\":[{\"value\":\"600\",\"context\":\"Sample.Periodic\",\"unit\":\"Wh\"}]}]}]",
+		"[2,\"uniqueId\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":\"trsID\",\"meterValue\":[{\"timestamp\":\"timeStamp\",\"sampledValue\":[{\"value\":\"700\",\"context\":\"Sample.Periodic\",\"unit\":\"Wh\"}]}]}]",
+
 		"[2,\"uniqueId\",\"StatusNotification\",{\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Charging\",\"timestamp\":\"timeStamp\"}]",
-		"[2,\"uniqueId\",\"StopTransaction\",{\"meterStop\":800,\"timestamp\":\"timeStamp\",\"transactionId\":1}]",
+		"[2,\"uniqueId\",\"StopTransaction\",{\"meterStop\":800,\"timestamp\":\"timeStamp\",\"transactionId\":\"trsID\"}]",
 		"[2,\"uniqueId\",\"StatusNotification\",{\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Finishing\",\"timestamp\":\"timeStamp\"}]",
 		"[2,\"uniqueId\",\"StatusNotification\",{\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Available\",\"timestamp\":\"timeStamp\"}]"
 	],

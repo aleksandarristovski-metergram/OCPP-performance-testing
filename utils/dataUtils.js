@@ -22,6 +22,12 @@ export function createMessage(message){
     const id = generateUniqueId();
     const timeStamp = createTimestamp();
 
-    newMessage = newMessage.replace('uniqueId', id).replace('timeStamp', timeStamp);
+    newMessage = newMessage.replace('uniqueId', id).replace('timeStamp', timeStamp).replace('TOKEN', "TK_00" + __VU);
     return newMessage;
+}
+
+export function addTrsId(message, id){
+    let newMessage = message;
+    newMessage = newMessage.replace('"trsID"', id);
+    return newMessage
 }
