@@ -2,7 +2,7 @@ export const SOAK_TEST_OPTIONS = {
     scenarios: {
         soak_test: {
             executor: 'constant-vus',
-            vus: 10,
+            vus: 15,
             duration: '5m'
         }
     },

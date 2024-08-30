@@ -8,13 +8,7 @@ import { INCREASING_LOAD_OPTIONS } from '../scenarios/increasing_load.js';
 import { SOAK_TEST_OPTIONS } from '../scenarios/soak_test.js'
 import { STRESS_TEST_OPTIONS } from '../scenarios/stress_test.js'
 import { SPIKE_TEST_OPTIONS } from '../scenarios/spike_test.js'
-import {  createMessage, addTrsId} from '../utils/dataUtils.js'
-
-
-// import { chai } from 'https://jslib.k6.io/k6chaijs/4.3.4.0/index.js';
-// import { initContractPlugin } from 'https://jslib.k6.io/k6chaijs-contracts/4.3.4.0/index.js';
-
-initContractPlugin(chai)
+import { createMessage, addTrsId} from '../utils/dataUtils.js'
 
 let messageResponseTime = new Trend('message_response_time');
 

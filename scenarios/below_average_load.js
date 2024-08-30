@@ -2,8 +2,8 @@ export const BELOW_AVERAGE_LOAD_OPTIONS = {
     scenarios: {
         below_average_load: {
             executor: 'shared-iterations',
-            vus: 2,
-            iterations: 4
+            vus: 3,
+            iterations: 9
         }
     },
     thresholds: {

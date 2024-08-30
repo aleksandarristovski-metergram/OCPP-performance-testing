@@ -2,8 +2,8 @@ export const STRESS_TEST_OPTIONS = {
     scenarios: {
         stress_test: {
             executor: 'shared-iterations',
-            vus: 10,
-            iterations: 100
+            vus: 20,
+            iterations: 60
         }
     },
     thresholds: {

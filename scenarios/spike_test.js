@@ -3,7 +3,7 @@ export const SPIKE_TEST_OPTIONS = {
         spike_test: {
             executor: 'ramping-vus',
             stages: [
-                { duration: '20s', target: 10 },
+                { duration: '10s', target: 10 },
                 { duration: '20s', target: 30 },
                 { duration: '1m', target: 5 }
             ]

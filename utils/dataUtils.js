@@ -22,7 +22,8 @@ export function createMessage(message){
     const id = generateUniqueId();
     const timeStamp = createTimestamp();
 
-    newMessage = newMessage.replace('uniqueId', id).replace('timeStamp', timeStamp).replace('TOKEN', "TK_00" + __VU);
+    newMessage = newMessage.replace('uniqueId', id).replace('timeStamp', timeStamp);
+
     return newMessage;
 }
 
