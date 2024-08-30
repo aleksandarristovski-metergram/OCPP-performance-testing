@@ -11,8 +11,8 @@ import { SPIKE_TEST_OPTIONS } from '../scenarios/spike_test.js'
 import {  createMessage, addTrsId} from '../utils/dataUtils.js'
 
 
-import { chai } from 'https://jslib.k6.io/k6chaijs/4.3.4.0/index.js';
-import { initContractPlugin } from 'https://jslib.k6.io/k6chaijs-contracts/4.3.4.0/index.js';
+// import { chai } from 'https://jslib.k6.io/k6chaijs/4.3.4.0/index.js';
+// import { initContractPlugin } from 'https://jslib.k6.io/k6chaijs-contracts/4.3.4.0/index.js';
 
 initContractPlugin(chai)
 
